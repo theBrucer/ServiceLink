@@ -1,0 +1,11 @@
+
+.settings-nav .active {
+    background-color: transparent !important;
+    /* color: rgba(0,0,0,.9) !important; */
+    color: rgba(0,0,0,.9) !important;
+    /* border-bottom: none !important; */
+}
+
+.settings-nav-link {
+    color: rgba(0,0,0,.35) !important;
+}

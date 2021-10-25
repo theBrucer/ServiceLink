@@ -1,0 +1,50 @@
+:root {
+	--menuWidth: 350px;
+}
+
+#jobFilters {
+	width: var(--menuWidth);
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+	overflow: scroll;
+	z-index: 1000;
+}
+
+#jobFilters.hide {
+	transform: translate3d(calc(var(--menuWidth) * -1), 0, 0);
+}
+
+#jobFilters.show {
+	transform: translate3d(0vw, 0, 0);
+	overflow: hidden;
+}
+
+
+
+/* Dark Overlay beneath menu related styling */
+#overlay {
+        opacity: 0;
+
+	width: 100vw;
+        cursor: pointer;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+}
+
+#overlay.hide {
+        display: none;
+}
+
+#overlay.show {
+        display: block;
+        opacity: 0.4;
+}
